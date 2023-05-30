@@ -66,7 +66,7 @@ calculartip()
 function calculartip(){
     if(peoplevalue >=1){
         let tipAmount = (billvalue * tipvalue) / peoplevalue
-        let total = (billvalue * tipAmount) / peoplevalue
+        let total = (billvalue + tipAmount) / peoplevalue
         tipporpersona.innerHTML = "$" + tipAmount.toFixed(2);
         totalporpersona.innerHTML = "$" + total.toFixed(2);
     }
